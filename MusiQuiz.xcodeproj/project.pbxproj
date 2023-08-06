@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAB28C162A7DC56400431820 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB28C152A7DC56400431820 /* HomeView.swift */; };
+		DAB28C192A7DE1D100431820 /* top_100.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAB28C172A7DE1D100431820 /* top_100.csv */; };
+		DAB28C1A2A7DE1D100431820 /* k_pop.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAB28C182A7DE1D100431820 /* k_pop.csv */; };
+		DAB28C1C2A7DE48300431820 /* swedish.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAB28C1B2A7DE48300431820 /* swedish.csv */; };
+		DAB82A0F2A7C1C30003CF437 /* MusiQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB82A0E2A7C1C30003CF437 /* MusiQuizApp.swift */; };
+		DAB82A112A7C1C30003CF437 /* ArtistQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB82A102A7C1C30003CF437 /* ArtistQuizView.swift */; };
+		DAB82A132A7C1C36003CF437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB82A122A7C1C36003CF437 /* Assets.xcassets */; };
+		DAB82A162A7C1C36003CF437 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB82A152A7C1C36003CF437 /* Preview Assets.xcassets */; };
+		DAB82A1F2A7C1C5D003CF437 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB82A1E2A7C1C5D003CF437 /* Spotify.swift */; };
+		DAB82A232A7C1C72003CF437 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB82A222A7C1C72003CF437 /* Quiz.swift */; };
+		DAB82A252A7C1E15003CF437 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB82A242A7C1E15003CF437 /* Environment.swift */; };
+		DAB82A2A2A7C20FF003CF437 /* SpotifyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = DAB82A292A7C20FF003CF437 /* SpotifyAPI */; };
+		DAB82A2D2A7C2113003CF437 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = DAB82A2C2A7C2113003CF437 /* KeychainAccess */; };
+		DAB82A3A2A7C3C5C003CF437 /* ParseCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB82A392A7C3C5C003CF437 /* ParseCSV.swift */; };
+		DAB82A3D2A7C3C77003CF437 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = DAB82A3C2A7C3C77003CF437 /* SwiftCSV */; };
+		DAB82A3F2A7C50BD003CF437 /* most_popular.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAB82A3E2A7C50BD003CF437 /* most_popular.csv */; };
+		DAF67B072A804A2800612839 /* HighScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B062A804A2800612839 /* HighScoreManager.swift */; };
+		DAFBA85F2A7D8D7C0084B79C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBA85E2A7D8D7C0084B79C /* MainView.swift */; };
+		DAFBA8612A7D8F5D0084B79C /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBA8602A7D8F5D0084B79C /* LandingView.swift */; };
+		DAFBA8632A7D8F800084B79C /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBA8622A7D8F800084B79C /* AuthorizationView.swift */; };
+		DAFBA8652A7D8FA70084B79C /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBA8642A7D8FA70084B79C /* ColorModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DAB28C152A7DC56400431820 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DAB28C172A7DE1D100431820 /* top_100.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = top_100.csv; path = MusiQuiz/top_100.csv; sourceTree = SOURCE_ROOT; };
+		DAB28C182A7DE1D100431820 /* k_pop.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = k_pop.csv; path = MusiQuiz/k_pop.csv; sourceTree = SOURCE_ROOT; };
+		DAB28C1B2A7DE48300431820 /* swedish.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = swedish.csv; path = MusiQuiz/swedish.csv; sourceTree = SOURCE_ROOT; };
+		DAB82A0B2A7C1C30003CF437 /* MusiQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusiQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB82A0E2A7C1C30003CF437 /* MusiQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiQuizApp.swift; sourceTree = "<group>"; };
+		DAB82A102A7C1C30003CF437 /* ArtistQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistQuizView.swift; sourceTree = "<group>"; };
+		DAB82A122A7C1C36003CF437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAB82A152A7C1C36003CF437 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DAB82A1E2A7C1C5D003CF437 /* Spotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
+		DAB82A222A7C1C72003CF437 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		DAB82A242A7C1E15003CF437 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		DAB82A362A7C2335003CF437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DAB82A392A7C3C5C003CF437 /* ParseCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseCSV.swift; sourceTree = "<group>"; };
+		DAB82A3E2A7C50BD003CF437 /* most_popular.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = most_popular.csv; sourceTree = "<group>"; };
+		DAF67B062A804A2800612839 /* HighScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreManager.swift; sourceTree = "<group>"; };
+		DAFBA85E2A7D8D7C0084B79C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DAFBA8602A7D8F5D0084B79C /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		DAFBA8622A7D8F800084B79C /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		DAFBA8642A7D8FA70084B79C /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAB82A082A7C1C30003CF437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB82A3D2A7C3C77003CF437 /* SwiftCSV in Frameworks */,
+				DAB82A2D2A7C2113003CF437 /* KeychainAccess in Frameworks */,
+				DAB82A2A2A7C20FF003CF437 /* SpotifyAPI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAB82A022A7C1C30003CF437 = {
+			isa = PBXGroup;
+			children = (
+				DAB82A0D2A7C1C30003CF437 /* MusiQuiz */,
+				DAB82A0C2A7C1C30003CF437 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAB82A0C2A7C1C30003CF437 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAB82A0B2A7C1C30003CF437 /* MusiQuiz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAB82A0D2A7C1C30003CF437 /* MusiQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				DAB82A362A7C2335003CF437 /* Info.plist */,
+				DAB82A3E2A7C50BD003CF437 /* most_popular.csv */,
+				DAB28C182A7DE1D100431820 /* k_pop.csv */,
+				DAB28C172A7DE1D100431820 /* top_100.csv */,
+				DAB28C1B2A7DE48300431820 /* swedish.csv */,
+				DAB82A1D2A7C1C47003CF437 /* Views */,
+				DAB82A1C2A7C1C41003CF437 /* Models */,
+				DAB82A0E2A7C1C30003CF437 /* MusiQuizApp.swift */,
+				DAB82A122A7C1C36003CF437 /* Assets.xcassets */,
+				DAB82A142A7C1C36003CF437 /* Preview Content */,
+			);
+			path = MusiQuiz;
+			sourceTree = "<group>";
+		};
+		DAB82A142A7C1C36003CF437 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DAB82A152A7C1C36003CF437 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAB82A1C2A7C1C41003CF437 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAB82A1E2A7C1C5D003CF437 /* Spotify.swift */,
+				DAB82A222A7C1C72003CF437 /* Quiz.swift */,
+				DAB82A242A7C1E15003CF437 /* Environment.swift */,
+				DAB82A392A7C3C5C003CF437 /* ParseCSV.swift */,
+				DAFBA8642A7D8FA70084B79C /* ColorModel.swift */,
+				DAF67B062A804A2800612839 /* HighScoreManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DAB82A1D2A7C1C47003CF437 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAB82A102A7C1C30003CF437 /* ArtistQuizView.swift */,
+				DAFBA85E2A7D8D7C0084B79C /* MainView.swift */,
+				DAFBA8602A7D8F5D0084B79C /* LandingView.swift */,
+				DAFBA8622A7D8F800084B79C /* AuthorizationView.swift */,
+				DAB28C152A7DC56400431820 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAB82A0A2A7C1C30003CF437 /* MusiQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB82A192A7C1C36003CF437 /* Build configuration list for PBXNativeTarget "MusiQuiz" */;
+			buildPhases = (
+				DAB82A072A7C1C30003CF437 /* Sources */,
+				DAB82A082A7C1C30003CF437 /* Frameworks */,
+				DAB82A092A7C1C30003CF437 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusiQuiz;
+			packageProductDependencies = (
+				DAB82A292A7C20FF003CF437 /* SpotifyAPI */,
+				DAB82A2C2A7C2113003CF437 /* KeychainAccess */,
+				DAB82A3C2A7C3C77003CF437 /* SwiftCSV */,
+			);
+			productName = MusiQuiz;
+			productReference = DAB82A0B2A7C1C30003CF437 /* MusiQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAB82A032A7C1C30003CF437 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DAB82A0A2A7C1C30003CF437 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DAB82A062A7C1C30003CF437 /* Build configuration list for PBXProject "MusiQuiz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAB82A022A7C1C30003CF437;
+			packageReferences = (
+				DAB82A282A7C20FF003CF437 /* XCRemoteSwiftPackageReference "SpotifyAPI" */,
+				DAB82A2B2A7C2113003CF437 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				DAB82A3B2A7C3C77003CF437 /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+			);
+			productRefGroup = DAB82A0C2A7C1C30003CF437 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAB82A0A2A7C1C30003CF437 /* MusiQuiz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAB82A092A7C1C30003CF437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB28C1A2A7DE1D100431820 /* k_pop.csv in Resources */,
+				DAB28C192A7DE1D100431820 /* top_100.csv in Resources */,
+				DAB82A162A7C1C36003CF437 /* Preview Assets.xcassets in Resources */,
+				DAB82A132A7C1C36003CF437 /* Assets.xcassets in Resources */,
+				DAB28C1C2A7DE48300431820 /* swedish.csv in Resources */,
+				DAB82A3F2A7C50BD003CF437 /* most_popular.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAB82A072A7C1C30003CF437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB82A1F2A7C1C5D003CF437 /* Spotify.swift in Sources */,
+				DAB82A112A7C1C30003CF437 /* ArtistQuizView.swift in Sources */,
+				DAB82A3A2A7C3C5C003CF437 /* ParseCSV.swift in Sources */,
+				DAFBA85F2A7D8D7C0084B79C /* MainView.swift in Sources */,
+				DAB82A232A7C1C72003CF437 /* Quiz.swift in Sources */,
+				DAB28C162A7DC56400431820 /* HomeView.swift in Sources */,
+				DAB82A0F2A7C1C30003CF437 /* MusiQuizApp.swift in Sources */,
+				DAFBA8612A7D8F5D0084B79C /* LandingView.swift in Sources */,
+				DAF67B072A804A2800612839 /* HighScoreManager.swift in Sources */,
+				DAB82A252A7C1E15003CF437 /* Environment.swift in Sources */,
+				DAFBA8652A7D8FA70084B79C /* ColorModel.swift in Sources */,
+				DAFBA8632A7D8F800084B79C /* AuthorizationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DAB82A172A7C1C36003CF437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAB82A182A7C1C36003CF437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAB82A1A2A7C1C36003CF437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MusiQuiz/Preview Content\"";
+				DEVELOPMENT_TEAM = V6GZ84ML39;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusiQuiz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Adde.MusiQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAB82A1B2A7C1C36003CF437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MusiQuiz/Preview Content\"";
+				DEVELOPMENT_TEAM = V6GZ84ML39;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusiQuiz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Adde.MusiQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAB82A062A7C1C30003CF437 /* Build configuration list for PBXProject "MusiQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB82A172A7C1C36003CF437 /* Debug */,
+				DAB82A182A7C1C36003CF437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB82A192A7C1C36003CF437 /* Build configuration list for PBXNativeTarget "MusiQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB82A1A2A7C1C36003CF437 /* Debug */,
+				DAB82A1B2A7C1C36003CF437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DAB82A282A7C20FF003CF437 /* XCRemoteSwiftPackageReference "SpotifyAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Peter-Schorn/SpotifyAPI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		DAB82A2B2A7C2113003CF437 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DAB82A3B2A7C3C77003CF437 /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAB82A292A7C20FF003CF437 /* SpotifyAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAB82A282A7C20FF003CF437 /* XCRemoteSwiftPackageReference "SpotifyAPI" */;
+			productName = SpotifyAPI;
+		};
+		DAB82A2C2A7C2113003CF437 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAB82A2B2A7C2113003CF437 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		DAB82A3C2A7C3C77003CF437 /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAB82A3B2A7C3C77003CF437 /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DAB82A032A7C1C30003CF437 /* Project object */;
+}

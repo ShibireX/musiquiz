@@ -8,13 +8,34 @@
 import Foundation
 
 class HighScoreManager: ObservableObject {
-    @Published var highScore: Int {
+    @Published var highScores: [String: Int] {
         didSet {
-            UserDefaults.standard.set(highScore, forKey: "HighScoreKey")
+            saveHighScores()
         }
     }
     
     init() {
-        self.highScore = UserDefaults.standard.integer(forKey: "HighScoreKey")
+        self.highScores = [:]
+        self.highScores = loadHighScores()
+    }
+    
+    private func loadHighScores() -> [String: Int] {
+        if let savedHighScores = UserDefaults.standard.dictionary(forKey: "HighScoresKey") as? [String: Int] {
+            return savedHighScores
+        } else {
+            return [:]
+        }
+    }
+    
+    private func saveHighScores() {
+        UserDefaults.standard.set(highScores, forKey: "HighScoresKey")
+    }
+    
+    func setHighScore(for quiz: String, score: Int) {
+        highScores[quiz] = score
+    }
+    
+    func getHighScore(for quiz: String) -> Int {
+        return highScores[quiz] ?? 0
     }
 }

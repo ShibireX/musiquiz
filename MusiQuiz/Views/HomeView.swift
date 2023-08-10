@@ -10,61 +10,100 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var highScoreManager: HighScoreManager
     
-    init() {
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor(.white)
-        appearance.titleTextAttributes = [.foregroundColor: UIColor(.black)]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor(.black)]
-        UINavigationBar.appearance().standardAppearance = appearance
-        UINavigationBar.appearance().scrollEdgeAppearance = appearance
-    }
-    
     var body: some View {
         NavigationStack {
             ZStack {
-                Color(.white).ignoresSafeArea()
-                ScrollView {
-                    LazyVGrid(columns: [GridItem(.fixed(175)), GridItem(.fixed(175))],
-                              spacing: 1,
-                              content: {
-                        Section(header: Text("Artists").font(.title2)) {
-                            NavigationLink {
-                                ArtistQuizView(artists: parseArtistsFromCSV(file: "top_100"), gradientColors: ColorModel.quizColors["top_100"]!)
-                            } label: {
-                                QuizItemView(colors: ColorModel.quizColors["top_100"]!, option: "Mainstream", highScore: highScoreManager.highScore)
-                            }
-                            NavigationLink {
-                                //ArtistQuizView(artists: parseArtistsFromCSV(file: "k_pop"), gradientColors: ColorModel.quizColors["top_100"]!)
-                            } label: {
-                                //QuizItemView(option: "K-Pop", color: .purple)
-                            }
-                            NavigationLink {
-                                //ArtistQuizView(artists: parseArtistsFromCSV(file: "swedish"), gradientColors: ColorModel.quizColors["top_100"]!)
-                            } label: {
-                                //QuizItemView(option: "Swedish", color: .blue)
-                            }
-                        }
+                ColorModel.mainColor.ignoresSafeArea()
+                VStack {
+                    Text("MusiQuiz")
+                        .font(.largeTitle)
+                        .bold()
                         .padding()
-                        Section(header: Text("Tracks").font(.title2)) {
-                            NavigationLink {
-                                //ArtistQuizView(artists: parseArtistsFromCSV(file: "most_popular"), gradientColors: ColorModel.quizColors["top_100"]!)
-                            } label: {
-                                //QuizItemView(option: "Top 100", color: .orange)
+                        .foregroundColor(.black)
+                    ScrollView {
+                        LazyVGrid(columns: [GridItem(.fixed(175)), GridItem(.fixed(175))],
+                                  spacing: 1,
+                                  content: {
+                            Section(header: Text("Artist Quizzes").font(.title2).opacity(0.7)) {
+                                NavigationLink {
+                                    ArtistQuizView(artists: parseArtistsFromCSV(file: "top_100"), gradientColors: ColorModel.quizColors["top_100"]!, quizName: "top_100")
+                                } label: {
+                                    QuizItemView(colors: ColorModel.quizColors["top_100"]!, option: "Mainstream", highScore: highScoreManager.getHighScore(for: "top_100"))
+                                }
+                                NavigationLink {
+                                    ArtistQuizView(artists: parseArtistsFromCSV(file: "k_pop"), gradientColors: ColorModel.quizColors["k_pop"]!, quizName: "k_pop")
+                                } label: {
+                                    QuizItemView(colors: ColorModel.quizColors["k_pop"]!, option: "K-Pop", highScore: highScoreManager.getHighScore(for: "k_pop"))
+                                }
+                                NavigationLink {
+                                    ArtistQuizView(artists: parseArtistsFromCSV(file: "swedish"), gradientColors: ColorModel.quizColors["swedish"]!, quizName: "swedish")
+                                } label: {
+                                    QuizItemView(colors: ColorModel.quizColors["swedish"]!, option: "Sweden", highScore: highScoreManager.getHighScore(for: "swedish"))
+                                }
+                                .padding(.top, -25)
+                                NavigationLink {
+                                    ArtistQuizView(artists: parseArtistsFromCSV(file: "anime"), gradientColors: ColorModel.quizColors["anime"]!, quizName: "anime")
+                                } label: {
+                                    QuizItemView(colors: ColorModel.quizColors["anime"]!, option: "Anime", highScore: highScoreManager.getHighScore(for: "anime"))
+                                }
+                                .padding(.top, -25)
+                                NavigationLink {
+                                    ArtistQuizView(artists: parseArtistsFromCSV(file: "latino_trap"), gradientColors: ColorModel.quizColors["latino_trap"]!, quizName: "latino_trap")
+                                } label: {
+                                    QuizItemView(colors: ColorModel.quizColors["latino_trap"]!, option: "Latino Trap", highScore: highScoreManager.getHighScore(for: "latino_trap"))
+                                }
+                                .padding(.top, -25)
+                                NavigationLink {
+                                    ArtistQuizView(artists: parseArtistsFromCSV(file: "swedish_hip_hop"), gradientColors: ColorModel.quizColors["swedish_hip_hop"]!, quizName: "swedish_hip_hop")
+                                } label: {
+                                    QuizItemView(colors: ColorModel.quizColors["swedish_hip_hop"]!, option: "Swedish Hip Hop", highScore: highScoreManager.getHighScore(for: "swedish_hip_hop"))
+                                }
+                                .padding(.top, -25)
                             }
-                            NavigationLink {
-                                //ArtistQuizView(artists: parseArtistsFromCSV(file: "most_popular"), gradientColors: ColorModel.quizColors["top_100"]!)
-                            } label: {
-                                //QuizItemView(option: "K-Pop", color: .purple)
+                            .padding()
+                            Section(header: Text("Song Quizzes").font(.title2).opacity(0.7)) {
+                                NavigationLink {
+                                    TrackQuizView(artists: parseArtistsFromCSV(file: "top_100"), gradientColors: ColorModel.quizColors["top_100"]!, quizName: "top_100_tracks")
+                                } label: {
+                                    QuizItemView(colors: ColorModel.quizColors["top_100"]!, option: "Mainstream", highScore: highScoreManager.getHighScore(for: "top_100_tracks"))
+                                }
+                                NavigationLink {
+                                    TrackQuizView(artists: parseArtistsFromCSV(file: "k_pop"), gradientColors: ColorModel.quizColors["k_pop"]!, quizName: "k_pop_tracks")
+                                } label: {
+                                    QuizItemView(colors: ColorModel.quizColors["k_pop"]!, option: "K-Pop", highScore: highScoreManager.getHighScore(for: "k_pop_tracks"))
+                                }
+                                NavigationLink {
+                                    TrackQuizView(artists: parseArtistsFromCSV(file: "swedish"), gradientColors: ColorModel.quizColors["swedish"]!, quizName: "swedish_tracks")
+                                } label: {
+                                    QuizItemView(colors: ColorModel.quizColors["swedish"]!, option: "Sweden", highScore: highScoreManager.getHighScore(for: "swedish_tracks"))
+                                }
+                                .padding(.top, -25)
+                                NavigationLink {
+                                    TrackQuizView(artists: parseArtistsFromCSV(file: "anime"), gradientColors: ColorModel.quizColors["anime"]!, quizName: "anime_tracks")
+                                } label: {
+                                    QuizItemView(colors: ColorModel.quizColors["anime"]!, option: "Anime", highScore: highScoreManager.getHighScore(for: "anime_tracks"))
+                                }
+                                .padding(.top, -25)
+                                NavigationLink {
+                                    TrackQuizView(artists: parseArtistsFromCSV(file: "latino_trap"), gradientColors: ColorModel.quizColors["latino_trap"]!, quizName: "latino_trap_tracks")
+                                } label: {
+                                    QuizItemView(colors: ColorModel.quizColors["latino_trap"]!, option: "Latino Trap", highScore: highScoreManager.getHighScore(for: "latino_trap_tracks"))
+                                }
+                                .padding(.top, -25)
+                                NavigationLink {
+                                    TrackQuizView(artists: parseArtistsFromCSV(file: "swedish_hip_hop"), gradientColors: ColorModel.quizColors["swedish_hip_hop"]!, quizName: "swedish_hip_hop_tracks")
+                                } label: {
+                                    QuizItemView(colors: ColorModel.quizColors["swedish_hip_hop"]!, option: "Swedish Hip Hop", highScore: highScoreManager.getHighScore(for: "swedish_hip_hop_tracks"))
+                                }
+                                .padding(.top, -25)
                             }
-                        }
-                        .padding()
-                    })
-                    .foregroundColor(.black)
+                            .padding()
+                        })
+                        .foregroundColor(.black)
+                    }
+                    .padding()
                 }
-                .padding()
             }
-            .navigationTitle("All Quizzes")
             .toolbar(.hidden)
         }
     }
@@ -86,11 +125,15 @@ struct QuizItemView: View {
             RoundedRectangle(cornerRadius: 5)
                 .fill(LinearGradient(gradient: Gradient(colors: colors), startPoint: .top, endPoint: .bottom))
                 .frame(width: 175, height: 100)
-            Text(option)
-                .font(.callout)
-                .foregroundColor(.white)
-                .bold()
-                .padding(EdgeInsets(top: 30, leading: -65, bottom: 0, trailing: 0))
+            HStack {
+                Text(option)
+                    .font(.callout)
+                    .foregroundColor(.white)
+                    .bold()
+                    .padding(.top, 25)
+                    .padding(.leading, 10)
+                Spacer()
+            }
             HStack {
                 Image(systemName: "crown.fill")
                     .frame(width: 10)

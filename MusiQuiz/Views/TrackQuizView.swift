@@ -1,19 +1,20 @@
 //
-//  ContentView.swift
+//  TrackQuizView.swift
 //  MusiQuiz
 //
-//  Created by Andreas Garcia on 2023-08-03.
+//  Created by Andreas Garcia on 2023-08-09.
 //
 
 import SwiftUI
 import SpotifyWebAPI
 import Combine
 import Foundation
+import AVFoundation
 
-struct ArtistQuizView: View {
+struct TrackQuizView: View {
     @EnvironmentObject var spotify: Spotify
     @State private var testArtists: [Artist] = []
-    @State private var testQuiz = Quiz(questions: [])
+    @State private var quiz = TrackQuiz(questions: [])
     @State private var result = " "
     @State private var questionNumber = 1
     @State private var correctAnswers = 0
@@ -44,7 +45,9 @@ struct ArtistQuizView: View {
     @State private var timeDifference: TimeInterval = 0
     @State private var totalPoints: Int = 0
     @EnvironmentObject var highScoreManager: HighScoreManager
-   
+    
+    // Music
+    @State private var audioPlayer: AVPlayer!
     
     var body: some View {
         ZStack {
@@ -56,7 +59,7 @@ struct ArtistQuizView: View {
                     .foregroundColor(.white)
             }
             .offset(CGSize(width: (UIScreen.main.bounds.width/2) - 30, height: (-UIScreen.main.bounds.height/2) + 70))
-            if !doneStoringQuestion || testQuiz.questions.isEmpty {
+            if !doneStoringQuestion || quiz.questions.isEmpty {
                 if isLoadingArtists {
                     Spacer()
                     HStack {
@@ -105,28 +108,24 @@ struct ArtistQuizView: View {
             }
             else {
                 VStack {
-                    ForEach(testQuiz.questions, id: \.self) { question in
+                    ForEach(quiz.questions, id: \.self) { question in
                         Text(question.questionType.rawValue)
                             .font(.title)
                             .bold()
                             .padding()
-                        AsyncImage(url: question.correctArtist.images?.largest?.url) { image in
-                            image
-                                .resizable()
-                                .frame(width: 300, height: 300)
-                                .aspectRatio(contentMode: .fit)
-                                .cornerRadius(10)
-                        } placeholder: {
-                            EmptyView()
-                                .frame(width: 300, height: 300)
-                        }
+                        Image(systemName: "music.note.list")
+                            .resizable()
+                            .frame(width: 300, height: 300)
+                            .aspectRatio(contentMode: .fit)
                         Spacer()
                         Text(result)
                         Spacer()
                         VStack {
-                            ForEach(question.artistAlternatives, id: \.self) { alternative in
+                            ForEach(question.trackAlternatives, id: \.self) { alternative in
                                 Button() {
-                                    if alternative.name == question.correctArtist.name {
+                                    self.audioPlayer.pause()
+                                    self.audioPlayer = nil
+                                    if alternative.name == question.correctTrack.name {
                                         result = "✅"
                                         self.correctAnswers += 1
                                         self.endTime = Date()
@@ -143,7 +142,7 @@ struct ArtistQuizView: View {
                                     
                                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                         self.result = " "
-                                        self.testQuiz.questions = []
+                                        self.quiz.questions = []
                                         if artists.count >= 5 && questionNumber < totalQuestions {
                                             questionNumber += 1
                                             self.buildQuestion()
@@ -176,6 +175,10 @@ struct ArtistQuizView: View {
                 .padding(.top, 20)
                 .opacity(contentOpacity)
                 .onAppear {
+                    if let previewURL = quiz.questions[0].correctTrack.previewURL {
+                        self.audioPlayer = AVPlayer(url: previewURL)
+                        self.audioPlayer.play()
+                    }
                     self.startTime = Date()
                     self.contentOpacity = 0.0
                     if doneStoringQuestion {
@@ -191,14 +194,20 @@ struct ArtistQuizView: View {
         .onAppear {
             self.buildQuestion()
         }
+        .onDisappear {
+            if self.audioPlayer != nil {
+                self.audioPlayer.pause()
+                self.audioPlayer = nil
+            }
+        }
     }
     
-    func fetchArtists(artists: [SpotifyURIConvertible]) {
+    func fetchSongs(artist: SpotifyURIConvertible) {
         self.didRequestArtists = true
         self.isLoadingArtists = true
         
         self.loadArtistsCancellable = spotify.spotifyAPI
-            .artists(artists)
+            .artistTopTracks(artist, country: "SE")
             .sink(receiveCompletion: { completion in
                 switch completion {
                     case .finished:
@@ -208,40 +217,41 @@ struct ArtistQuizView: View {
                         self.artistsNotLoaded = true
                         print(error)
                 }
-            }, receiveValue: { fetchedArtists in
-                let artists = fetchedArtists.compactMap { $0 }
-                    .filter { $0.id != nil }
-                var question = ArtistQuestion(questionType: .imageQuestion, artistAlternatives: artists, correctArtist: artists[0])
-                question.artistAlternatives.shuffle()
-                self.testQuiz.questions.append(question)
+            }, receiveValue: { fetchedTracks in
+                var tracks = fetchedTracks.compactMap { $0 }
+                    .filter { $0.previewURL != nil }
+                if tracks.count >= 4 {
+                    tracks.shuffle()
+                    var question = TrackQuestion(questionType: .trackQuestion, trackAlternatives: Array(tracks.prefix(4)), correctTrack: tracks[0])
+                    question.trackAlternatives.shuffle()
+                    self.quiz.questions.append(question)
+                } else {
+                    self.buildQuestion()
+                }
+                
             })
     }
     
     func buildQuestion() {
         self.doneStoringQuestion = false
-        
-        var randomArtists = [SpotifyURIConvertible]()
-        var leftOverArtists = [Artistt]()
-        for _ in 1...4 {
-            let randomInt = Int.random(in: 1...self.artists.count-1)
-            leftOverArtists.append(self.artists[randomInt])
-            randomArtists.append("spotify:artist:" + self.artists[randomInt].artistId)
-            self.artists.remove(at: randomInt)
-        }
-        
-        self.artists.append(contentsOf: leftOverArtists.dropFirst())
-        self.fetchArtists(artists: randomArtists)
+        var randomArtist: SpotifyURIConvertible = ""
+  
+        let randomInt = Int.random(in: 1...self.artists.count-1)
+        randomArtist = "spotify:artist:" + self.artists[randomInt].artistId
+        self.artists.remove(at: randomInt)
+ 
+        self.fetchSongs(artist: randomArtist)
         self.doneStoringQuestion = true
     }
 }
 
-struct ArtistQuizView_Previews: PreviewProvider {
+struct TrackQuizView_Previews: PreviewProvider {
     static var spotify = Spotify()
     @State static var highScore = 0
     
     
     static var previews: some View {
-        ArtistQuizView(artists: [Artistt(artistId: "0", popularity: 0)], gradientColors: [.blue], quizName: "Test")
+        TrackQuizView(artists: [Artistt(artistId: "0", popularity: 0)], gradientColors: [.blue], quizName: "Test")
             .environmentObject(spotify)
             .onAppear(perform: onAppear)
     }
@@ -250,3 +260,4 @@ struct ArtistQuizView_Previews: PreviewProvider {
         spotify.isAuthorized = true
     }
 }
+

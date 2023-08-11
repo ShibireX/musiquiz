@@ -18,6 +18,7 @@ A visual demonstration of the application in action is available at: https://www
 - Spotify Web API
 - Combine
 - KeyChainAccess
+- SwiftCSV
 
 ## Limitations
 Worth noting is that the application currently needs CodeAuthorizationFlow authorization to be able to work as intended with the artist specials quizzes. This is due to the fact that the audio previews sourced from the Spotify API often only exist within this authorization scope (for unclear reasons). Taking this into account, developers that want to examine or further expand the application will have to undergo several steps to enable development in their own environment. For development, I recommend reading the Swift library documentation for the Spotify Web API: https://github.com/Peter-Schorn/SpotifyAPI

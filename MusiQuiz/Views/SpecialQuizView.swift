@@ -18,13 +18,14 @@ struct SpecialQuizView: View {
     @State private var questionNumber = 1
     @State private var correctAnswers = 0
     @State private var quizFinished: Bool = false
-    private let totalQuestions = 10
+    private let totalQuestions = 20
 
     @State private var doneStoringQuestion = false
     @State private var didRequestTracks = false
     @State private var isLoadingTracks = false
     @State private var tracksNotLoaded = false
     @State private var loadTracksCancellable: AnyCancellable? = nil
+    @State private var loadAlbumTracksCancellable: AnyCancellable? = nil
     @State private var contentOpacity = 0.0
     
     @State var tracks: [Track] = []
@@ -32,6 +33,7 @@ struct SpecialQuizView: View {
     
     // Information
     let quizName: String
+    @State var trackIds: [SpotifyURIConvertible]
     
     // Animations
     @State private var rocketOffset: CGSize = CGSize(width: -150, height: 200)
@@ -192,7 +194,11 @@ struct SpecialQuizView: View {
         .toolbar(.hidden)
         .foregroundColor(.white)
         .onAppear {
-            self.getArtistTracks(artist: quizName)
+            if self.trackIds.count > 50 {
+                self.trackIds.shuffle()
+                self.trackIds = Array(self.trackIds.prefix(50))
+            }
+            self.getTracks(tracks: trackIds)
         }
         .onDisappear {
             if self.audioPlayer != nil {
@@ -202,12 +208,12 @@ struct SpecialQuizView: View {
         }
     }
     
-    func getArtistTracks(artist: String) {
+    func getTracks(tracks: [SpotifyURIConvertible]) {
         self.didRequestTracks = true
         self.isLoadingTracks = true
         
         self.loadTracksCancellable = spotify.spotifyAPI
-            .search(query: artist, categories: [.track], limit: 50)
+            .tracks(tracks, market: "SE")
             .sink(receiveCompletion: { completion in
                 switch completion {
                     case .finished:
@@ -217,16 +223,11 @@ struct SpecialQuizView: View {
                         self.tracksNotLoaded = true
                         print(error)
                 }
-            }, receiveValue: { results in
-                if var processedTracks = results.tracks?.items {
-                    
-                    processedTracks = processedTracks.compactMap { $0 }
-                        .filter { $0.previewURL != nil }
-                    print(processedTracks.count)
-                    self.tracks.append(contentsOf: processedTracks)
-                    self.buildQuestion()
-                }
-                
+            }, receiveValue: { fetchedTracks in
+                let allTracks = fetchedTracks.compactMap { $0 }
+                    .filter { $0.previewURL != nil }
+                self.tracks.append(contentsOf: allTracks)
+                self.buildQuestion()
             })
     }
     
@@ -260,7 +261,7 @@ struct SpecialQuizView_Previews: PreviewProvider {
     
     
     static var previews: some View {
-        SpecialQuizView(gradientColors: [.blue], quizName: "Justin Bieber")
+        SpecialQuizView(gradientColors: [.blue], quizName: "Selena Gomez", trackIds: parseTracksFromCSV(file: "selena gomez"))
             .environmentObject(spotify)
             .onAppear(perform: onAppear)
     }

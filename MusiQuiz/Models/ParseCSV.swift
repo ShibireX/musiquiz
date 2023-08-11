@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftCSV
+import SpotifyWebAPI
 
 struct Artistt: Hashable {
     let artistId: String
@@ -24,7 +25,6 @@ func parseArtistsFromCSV(file: String) -> [Artistt] {
                 guard let artistId = row["id"],
                       let popularityStr = row["popularity"],
                       let popularity = Int(popularityStr)
-                      //popularity > 90
                 else {
                     continue
                 }
@@ -38,4 +38,27 @@ func parseArtistsFromCSV(file: String) -> [Artistt] {
     }
 
     return artists
+}
+
+func parseTracksFromCSV(file: String) -> [SpotifyURIConvertible] {
+    var tracks: [SpotifyURIConvertible] = []
+    
+    if let csvPath = Bundle.main.path(forResource: file, ofType: "csv") {
+        do {
+            let csv = try CSV<Named>(url: URL(fileURLWithPath: csvPath))
+            
+            for row in csv.rows {
+                guard let trackId = row["id"] else {
+                    continue
+                }
+                let track = "spotify:track:" + trackId
+                tracks.append(track)
+            }
+        }
+        catch {
+            print("Error parsing CSV: \(error)")
+        }
+    }
+    
+    return tracks
 }

@@ -1,0 +1,41 @@
+id,name,popularity,duration_ms,explicit,artists,id_artists,release_date,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,time_signature
+1UXBbmjIrxjckrbv5EfSVT,Tell Me Something I Don't Know - Soundtrack,58,201427,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2008-08-26,0.611,0.936,7,-3.697,0,0.11,0.0309,0.0,0.12,0.697,144.901,4
+1YaVmBh7EAeR54FIjuFcb5,Naturally,66,202587,0,['Selena Gomez & The Scene'],['6dJeKm76NjfXBNTpHmOhfO'],2009-01-01,0.605,0.902,10,-5.406,0,0.0511,0.0185,1.01e-06,0.0534,0.875,132.612,4
+0laYHRpNTS6i8FXdupHkJ4,Love You Like A Love Song,79,188453,0,['Selena Gomez & The Scene'],['6dJeKm76NjfXBNTpHmOhfO'],2011-01-01,0.858,0.678,1,-3.87,0,0.0469,0.0761,0.0,0.0741,0.922,117.009,4
+3TcL0dyCMyr0kyTTc4NLgI,Who Says,76,195613,0,['Selena Gomez & The Scene'],['6dJeKm76NjfXBNTpHmOhfO'],2011-01-01,0.682,0.927,4,-2.915,1,0.0479,0.0843,0.0,0.149,0.744,101.019,4
+6ciLLh4TkPYDUfNxn2Z0KO,Hit The Lights,61,194427,0,['Selena Gomez & The Scene'],['6dJeKm76NjfXBNTpHmOhfO'],2011-01-01,0.56,0.88,7,-3.953,1,0.0567,0.115,0.0,0.299,0.573,129.97,4
+6LoQHIo74tOzQ8EsLEkhgF,Come & Get It,71,231987,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2013-01-01,0.546,0.787,7,-4.1,0,0.0517,0.0101,0.00021,0.0809,0.573,79.979,4
+2OsEJFTfzfjG4oC92cuP2c,Slow Down,66,210293,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2013-01-01,0.722,0.821,1,-3.856,0,0.165,0.073,0.0,0.631,0.721,127.944,4
+6wJwkMo278iWVlWl1XQ4WA,The Heart Wants What It Wants,71,227373,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2014-01-01,0.616,0.789,7,-4.874,0,0.0377,0.053,0.0,0.142,0.621,83.066,4
+3CJvmtWw2bJsudbAC5uCQk,Hands To Myself,69,200680,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2015-10-09,0.811,0.499,5,-7.161,0,0.118,0.0147,2.44e-06,0.342,0.466,111.016,4
+6ZANrVuAMp2rpjhfbOuJly,Same Old Love,68,229080,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2015-10-09,0.672,0.593,11,-4.01,0,0.0304,0.0223,0.0,0.214,0.438,98.02,4
+5xdVqHtFS0eLuNp4Z8Wbpa,Good For You,68,221280,0,"['Selena Gomez', 'A$AP Rocky']","['0C8ZW7ezQVs4URX5aX7Kqx', '13ubrt8QOOCPljQ2FL1Kca']",2015-10-09,0.607,0.673,5,-6.484,0,0.0611,0.181,0.0,0.069,0.215,88.952,4
+7KxhSJOYiqCDclXDBNlFSZ,Kill Em With Kindness,68,217907,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2015-10-09,0.757,0.884,10,-5.488,0,0.0404,0.00795,5.87e-05,0.0973,0.398,120.012,4
+1JDIArrcepzWDTAWXdGYmP,I Want You To Know,67,240000,0,"['Zedd', 'Selena Gomez']","['2qxJFvFYMEDqd7ui6kSAcq', '0C8ZW7ezQVs4URX5aX7Kqx']",2015-05-18,0.58,0.846,9,-2.876,0,0.0573,0.00537,6.62e-06,0.145,0.366,129.998,4
+0tBbt8CrmxbjRP0pueQkyU,Wolves,81,197993,0,"['Selena Gomez', 'Marshmello']","['0C8ZW7ezQVs4URX5aX7Kqx', '64KEffDW9EtZ1y2vBYgq8T']",2017-10-25,0.724,0.804,11,-4.614,0,0.0448,0.124,0.0,0.204,0.306,124.987,4
+3eR23VReFzcdmS7TYCrhCe,It Ain't Me (with Selena Gomez),77,220781,0,"['Kygo', 'Selena Gomez']","['23fqKkggKUBHNkbKtXEls4', '0C8ZW7ezQVs4URX5aX7Kqx']",2017-02-16,0.64,0.533,0,-6.596,1,0.0706,0.119,0.0,0.0864,0.515,99.968,4
+4lnAN2S1fcI0SjxEbksZVr,Fetish (feat. Gucci Mane),71,186113,0,"['Selena Gomez', 'Gucci Mane']","['0C8ZW7ezQVs4URX5aX7Kqx', '13y7CgLHjMVRMDqxdx0Xdo']",2017-07-13,0.708,0.618,2,-4.424,1,0.0592,0.0204,6.81e-06,0.062,0.265,123.013,4
+2fZQIJew3nkNe99s2PKzul,Bad Liar,70,214648,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2017-05-18,0.965,0.414,1,-6.408,1,0.0713,0.189,0.0,0.0767,0.728,121.032,4
+4w8niZpiMy6qz1mntFA5uM,"Taki Taki (with Selena Gomez, Ozuna & Cardi B)",79,212500,1,"['DJ Snake', 'Selena Gomez', 'Ozuna', 'Cardi B']","['540vIaP2JwjQb9dm3aArA4', '0C8ZW7ezQVs4URX5aX7Kqx', '1i8SpTcr7yvPOmcqrbnVXY', '4kYSro6naA4h99UJvo89HB']",2018-09-28,0.842,0.801,8,-4.167,0,0.228,0.157,4.82e-06,0.0642,0.617,95.881,4
+514rhnksEwHUh6LxXsQ4Y9,Back To You,71,210240,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2018-05-18,0.6,0.683,6,-6.271,1,0.0493,0.0984,1.26e-06,0.11,0.494,102.036,4
+4l0Mvzj72xxOpRrp6h8nHi,Lose You To Love Me,84,206459,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2020-01-10,0.488,0.343,4,-8.985,1,0.0436,0.556,0.0,0.21,0.0978,102.819,4
+079Ey5uxL04AKPQgVQwx5h,Baila Conmigo (with Rauw Alejandro),90,186088,0,"['Selena Gomez', 'Rauw Alejandro']","['0C8ZW7ezQVs4URX5aX7Kqx', '1mcTU81TzQhprhouKaTkpq']",2021-03-12,0.823,0.544,5,-7.132,1,0.0715,0.0215,0.00315,0.0966,0.664,149.903,4
+3XoflnowYPFRPOh3uFvHcm,Selfish Love (with Selena Gomez),82,168649,0,"['DJ Snake', 'Selena Gomez']","['540vIaP2JwjQb9dm3aArA4', '0C8ZW7ezQVs4URX5aX7Kqx']",2021-03-04,0.723,0.646,5,-7.973,0,0.102,0.0206,0.352,0.0994,0.443,110.971,4
+36CiGk9oRdwTnBDMgKEfjl,Dámelo To’ (feat. Myke Towers),79,184134,0,"['Selena Gomez', 'Myke Towers']","['0C8ZW7ezQVs4URX5aX7Kqx', '7iK8PXO48WeuP03g8YR51W']",2021-03-12,0.787,0.641,8,-7.376,1,0.315,0.101,0.00534,0.07,0.437,182.003,4
+1v3lhrZEsOcazqR2QIyyRu,De Una Vez,77,155956,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2021-03-12,0.659,0.479,11,-6.79,0,0.2,0.152,0.0025,0.268,0.0395,163.882,4
+0lYS1tJg3r6ATe9bRPB0Hu,A Year Without Rain,61,234347,0,['Selena Gomez & The Scene'],['6dJeKm76NjfXBNTpHmOhfO'],2010-01-01,0.627,0.81,2,-5.296,0,0.0431,0.0125,3.09e-05,0.111,0.409,119.98,4
+06KyNuuMOX1ROXRhj787tj,We Don't Talk Anymore (feat. Selena Gomez),80,217707,0,"['Charlie Puth', 'Selena Gomez']","['6VuMaDnrHyPL1p4EHjYLi7', '0C8ZW7ezQVs4URX5aX7Kqx']",2016-01-29,0.728,0.563,1,-8.053,0,0.134,0.621,0.0,0.179,0.352,100.017,4
+0KoiMHhqKLoL4xM54rcWYY,"Taki Taki (feat. Selena Gomez, Ozuna & Cardi B)",72,212500,1,"['DJ Snake', 'Selena Gomez', 'Ozuna', 'Cardi B']","['540vIaP2JwjQb9dm3aArA4', '0C8ZW7ezQVs4URX5aX7Kqx', '1i8SpTcr7yvPOmcqrbnVXY', '4kYSro6naA4h99UJvo89HB']",2019-07-25,0.842,0.801,8,-4.167,0,0.228,0.157,4.82e-06,0.0642,0.617,95.881,4
+4JUPEh2DVSXFGExu4Uxevz,Ice Cream (with Selena Gomez),76,177813,0,"['BLACKPINK', 'Selena Gomez']","['41MozSoPIsD1dJM0CLPjZF', '0C8ZW7ezQVs4URX5aX7Kqx']",2020-10-02,0.79,0.701,9,-4.81,1,0.365,0.0317,8.06e-05,0.0311,0.91,159.972,4
+0OkJtCF6yQIdK11ge58uXD,Love Will Remember,58,210360,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2013-01-01,0.634,0.956,7,-4.143,0,0.152,0.0132,0.0,0.0978,0.33,109.979,4
+10xcIQQEJSEIOgG1HvS3t9,Magic,54,169640,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2009-01-01,0.6,0.916,11,-3.071,0,0.0374,0.00504,0.0,0.27,0.442,104.091,4
+2orLUhSEx1P12LOwyLn32D,"Shake It Up - From ""Shake It Up""",50,180347,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2011-01-01,0.727,0.809,2,-6.118,0,0.0327,0.0255,0.0,0.184,0.81,128.015,4
+1WSGTYKLEpKfNQYYW5Oymt,"I Can’t Get Enough (benny blanco, Selena Gomez, J Balvin, Tainy)",71,158027,0,"['benny blanco', 'Selena Gomez', 'J Balvin', 'Tainy']","['5CiGnKThu5ctn9pBxv7DGa', '0C8ZW7ezQVs4URX5aX7Kqx', '1vyhD5VmyZ7KMfW5gqLgo5', '0GM7qgcRCORpGnfcN2tCiB']",2019-02-28,0.541,0.468,10,-4.039,0,0.362,0.404,3.65e-06,0.358,0.69,95.266,4
+6nhvIZeu7g6OsDCLj1DKLl,Tell Me Something I Don't Know,54,175333,0,['Selena Gomez & The Scene'],['6dJeKm76NjfXBNTpHmOhfO'],2009-01-01,0.71,0.935,7,-3.339,0,0.193,0.14,0.0,0.0593,0.914,145.063,4
+3SKLeANDIsvrFnkw7v9uKH,Shake It Up,50,180347,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2011-01-01,0.727,0.809,2,-6.11,0,0.0326,0.0278,0.0,0.179,0.79,127.997,4
+4P6IttK2PRBjyr3fm0pP7t,Past Life (with Selena Gomez),75,186480,0,"['Trevor Daniel', 'Selena Gomez']","['7uaIm6Pw7xplS8Dy06V6pT', '0C8ZW7ezQVs4URX5aX7Kqx']",2020-06-26,0.612,0.539,3,-5.071,1,0.0488,0.104,0.0,0.18,0.294,79.948,4
+5U4wYRHrCRxRP6iQfM824C,Everything Is Not As It Seems - Series Theme Song,53,50613,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2009-01-01,0.796,0.766,5,-5.937,0,0.0919,0.0549,0.0,0.0946,0.921,124.896,4
+1LOuZmemeDN1SkJc9EemFI,Round & Round,53,186173,0,['Selena Gomez & The Scene'],['6dJeKm76NjfXBNTpHmOhfO'],2010-01-01,0.537,0.691,9,-4.065,0,0.0705,0.00242,0.0,0.584,0.572,127.86,4
+4a32Q7bRtWDGSEMbyWKIlj,Me & The Rhythm,55,213427,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2015-10-09,0.711,0.736,7,-5.959,1,0.104,0.00315,0.000637,0.0731,0.717,106.01,4
+12GEpg2XOPyqk03JZEZnJs,It Ain’t Me (with Selena Gomez),67,220781,0,"['Kygo', 'Selena Gomez']","['23fqKkggKUBHNkbKtXEls4', '0C8ZW7ezQVs4URX5aX7Kqx']",2017-02-17,0.64,0.533,0,-6.596,1,0.0706,0.119,0.0,0.0864,0.515,99.968,4
+3Fb4cttE912XgIeD25rXRn,Sober,56,194827,0,['Selena Gomez'],['0C8ZW7ezQVs4URX5aX7Kqx'],2015-10-09,0.573,0.741,9,-3.22,1,0.0788,0.171,0.0,0.104,0.526,92.021,4

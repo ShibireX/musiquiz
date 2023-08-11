@@ -31,6 +31,15 @@
 		DAF67B262A85B11800612839 /* SpecialQuizSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B252A85B11800612839 /* SpecialQuizSelectionView.swift */; };
 		DAF67B282A85B20B00612839 /* ArtistSpecials.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B272A85B20B00612839 /* ArtistSpecials.swift */; };
 		DAF67B2A2A85BAF700612839 /* SpecialQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B292A85BAF700612839 /* SpecialQuizView.swift */; };
+		DAF67B2C2A86748100612839 /* selena gomez.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B2B2A86748100612839 /* selena gomez.csv */; };
+		DAF67B302A86880300612839 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B2D2A86880300612839 /* AuthorizationView.swift */; };
+		DAF67B312A86880300612839 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B2E2A86880300612839 /* MainView.swift */; };
+		DAF67B322A86880300612839 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B2F2A86880300612839 /* LandingView.swift */; };
+		DAF67B392A868FBD00612839 /* travis scott.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B342A868FBD00612839 /* travis scott.csv */; };
+		DAF67B3A2A868FBD00612839 /* ariana grande.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B352A868FBD00612839 /* ariana grande.csv */; };
+		DAF67B3B2A868FBD00612839 /* bad bunny.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B362A868FBD00612839 /* bad bunny.csv */; };
+		DAF67B3C2A868FBD00612839 /* demi lovato.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B372A868FBD00612839 /* demi lovato.csv */; };
+		DAF67B3D2A868FBD00612839 /* justin bieber.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B382A868FBD00612839 /* justin bieber.csv */; };
 		DAFBA8652A7D8FA70084B79C /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBA8642A7D8FA70084B79C /* ColorModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +67,15 @@
 		DAF67B252A85B11800612839 /* SpecialQuizSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialQuizSelectionView.swift; sourceTree = "<group>"; };
 		DAF67B272A85B20B00612839 /* ArtistSpecials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistSpecials.swift; sourceTree = "<group>"; };
 		DAF67B292A85BAF700612839 /* SpecialQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialQuizView.swift; sourceTree = "<group>"; };
+		DAF67B2B2A86748100612839 /* selena gomez.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "selena gomez.csv"; sourceTree = "<group>"; };
+		DAF67B2D2A86880300612839 /* AuthorizationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		DAF67B2E2A86880300612839 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DAF67B2F2A86880300612839 /* LandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		DAF67B342A868FBD00612839 /* travis scott.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "travis scott.csv"; sourceTree = "<group>"; };
+		DAF67B352A868FBD00612839 /* ariana grande.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ariana grande.csv"; sourceTree = "<group>"; };
+		DAF67B362A868FBD00612839 /* bad bunny.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "bad bunny.csv"; sourceTree = "<group>"; };
+		DAF67B372A868FBD00612839 /* demi lovato.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "demi lovato.csv"; sourceTree = "<group>"; };
+		DAF67B382A868FBD00612839 /* justin bieber.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "justin bieber.csv"; sourceTree = "<group>"; };
 		DAFBA8642A7D8FA70084B79C /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +148,7 @@
 		DAB82A1D2A7C1C47003CF437 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DAF67B332A868D4A00612839 /* CodeAuthViews */,
 				DAB82A102A7C1C30003CF437 /* ArtistQuizView.swift */,
 				DAB28C152A7DC56400431820 /* HomeView.swift */,
 				DAF67B082A84233100612839 /* TrackQuizView.swift */,
@@ -143,6 +162,12 @@
 		DAF67B122A85663800612839 /* CSV */ = {
 			isa = PBXGroup;
 			children = (
+				DAF67B352A868FBD00612839 /* ariana grande.csv */,
+				DAF67B362A868FBD00612839 /* bad bunny.csv */,
+				DAF67B372A868FBD00612839 /* demi lovato.csv */,
+				DAF67B382A868FBD00612839 /* justin bieber.csv */,
+				DAF67B342A868FBD00612839 /* travis scott.csv */,
+				DAF67B2B2A86748100612839 /* selena gomez.csv */,
 				DAF67B202A858A7300612839 /* edm.csv */,
 				DAF67B1E2A858A7300612839 /* hip hop.csv */,
 				DAF67B1D2A858A7300612839 /* j-rock.csv */,
@@ -151,6 +176,16 @@
 				DAF67B172A857A8000612839 /* mainstream.csv */,
 			);
 			path = CSV;
+			sourceTree = "<group>";
+		};
+		DAF67B332A868D4A00612839 /* CodeAuthViews */ = {
+			isa = PBXGroup;
+			children = (
+				DAF67B2D2A86880300612839 /* AuthorizationView.swift */,
+				DAF67B2F2A86880300612839 /* LandingView.swift */,
+				DAF67B2E2A86880300612839 /* MainView.swift */,
+			);
+			path = CodeAuthViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +259,16 @@
 				DAB82A162A7C1C36003CF437 /* Preview Assets.xcassets in Resources */,
 				DAF67B222A858A7300612839 /* hip hop.csv in Resources */,
 				DAF67B1C2A85867500612839 /* k-pop.csv in Resources */,
+				DAF67B3C2A868FBD00612839 /* demi lovato.csv in Resources */,
 				DAF67B212A858A7300612839 /* j-rock.csv in Resources */,
 				DAB82A132A7C1C36003CF437 /* Assets.xcassets in Resources */,
+				DAF67B2C2A86748100612839 /* selena gomez.csv in Resources */,
+				DAF67B3D2A868FBD00612839 /* justin bieber.csv in Resources */,
+				DAF67B3B2A868FBD00612839 /* bad bunny.csv in Resources */,
 				DAF67B232A858A7300612839 /* pop.csv in Resources */,
 				DAF67B182A857A8000612839 /* mainstream.csv in Resources */,
+				DAF67B3A2A868FBD00612839 /* ariana grande.csv in Resources */,
+				DAF67B392A868FBD00612839 /* travis scott.csv in Resources */,
 				DAF67B242A858A7300612839 /* edm.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,8 +286,11 @@
 				DAB82A232A7C1C72003CF437 /* Quiz.swift in Sources */,
 				DAF67B282A85B20B00612839 /* ArtistSpecials.swift in Sources */,
 				DAF67B262A85B11800612839 /* SpecialQuizSelectionView.swift in Sources */,
+				DAF67B322A86880300612839 /* LandingView.swift in Sources */,
 				DAB28C162A7DC56400431820 /* HomeView.swift in Sources */,
 				DAF67B2A2A85BAF700612839 /* SpecialQuizView.swift in Sources */,
+				DAF67B302A86880300612839 /* AuthorizationView.swift in Sources */,
+				DAF67B312A86880300612839 /* MainView.swift in Sources */,
 				DAF67B092A84233100612839 /* TrackQuizView.swift in Sources */,
 				DAB82A0F2A7C1C30003CF437 /* MusiQuizApp.swift in Sources */,
 				DAF67B072A804A2800612839 /* HighScoreManager.swift in Sources */,

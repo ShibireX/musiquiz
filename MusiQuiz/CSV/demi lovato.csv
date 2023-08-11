@@ -1,0 +1,60 @@
+id,name,popularity,duration_ms,explicit,artists,id_artists,release_date,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,time_signature
+5pomCBdsTZSDCFHH8BAUQe,This Is Me,66,189173,0,"['Demi Lovato', 'Joe Jonas']","['6S2OmqARrzebs0tKUEyXyp', '7gbmX8SsfjEjxDMzBi1ZOL']",2008-01-01,0.421,0.821,1,-2.783,1,0.0372,0.00971,0.0,0.1,0.594,91.245,4
+0Di5p4ItolIUZB8c2P0pvs,"Wouldn't Change a Thing - From ""Camp Rock 2: The Final Jam""",61,203840,0,"['Demi Lovato', 'Joe Jonas']","['6S2OmqARrzebs0tKUEyXyp', '7gbmX8SsfjEjxDMzBi1ZOL']",2010-01-01,0.359,0.883,1,-3.535,1,0.0907,0.0753,0.0,0.112,0.481,171.725,4
+0cEBv7oJxFp3bfTFqWFI0R,Why Don't You Love Me (feat. Demi Lovato),62,211413,0,"['Hot Chelle Rae', 'Demi Lovato']","['6jTnHxhb6cDCaCu4rdvsQ0', '6S2OmqARrzebs0tKUEyXyp']",2011-11-25,0.53,0.802,2,-6.494,1,0.0362,0.121,0.0,0.118,0.566,148.054,3
+1V6gIisPpYqgFeWbMLI0bA,Heart Attack,79,210840,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2013-01-01,0.504,0.785,8,-4.802,1,0.104,0.0738,0.0,0.239,0.502,173.968,4
+5vTPxzm4h2bY9rYyVrGEU5,Really Don't Care,72,201600,0,"['Demi Lovato', 'Cher Lloyd']","['6S2OmqARrzebs0tKUEyXyp', '4m4SfDVbF5wxrwEjDKgi4k']",2013-01-01,0.706,0.728,7,-3.602,1,0.0852,0.123,0.0,0.185,0.851,121.017,4
+34MJ07N9Bhu6iKPaxSVnCT,Neon Lights,66,233173,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2013-01-01,0.631,0.819,9,-4.24,1,0.122,0.0767,0.0,0.1,0.733,125.928,4
+7nCBOm2WiTUPAx3TeG2rZA,Warrior,63,231173,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2013-01-01,0.415,0.399,9,-6.165,0,0.0423,0.868,0.0,0.114,0.196,146.485,4
+1RidHM9BC4M8DpfSQ6YLJh,Up (feat. Demi Lovato),70,224294,0,"['Olly Murs', 'Demi Lovato']","['3whuHq0yGx60atvA2RCVRW', '6S2OmqARrzebs0tKUEyXyp']",2014-11-24,0.692,0.831,9,-5.389,1,0.034,0.0146,0.0,0.103,0.676,114.972,4
+3by8IfnW9dZ2t4pZw1WVxz,Stone Cold,75,191308,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2015-01-01,0.419,0.453,8,-7.685,1,0.0437,0.539,0.0,0.0971,0.356,140.327,3
+3DXXKDbbZKyAZfNb96ST3q,Confident,73,205746,1,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2015-01-01,0.594,0.749,3,-6.251,1,0.0677,0.00188,0.000139,0.0869,0.344,130.064,4
+3uwnnTQcHM1rDqSfA4gQNz,Cool for the Summer,69,214740,1,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2015-01-01,0.583,0.61,5,-5.639,0,0.0382,0.00425,0.000105,0.14,0.336,114.06,4
+7gvd8xj4QgPqbQSsn5pV7d,Sorry Not Sorry,80,203760,1,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2017-09-29,0.705,0.64,11,-6.928,0,0.225,0.0237,0.0,0.262,0.887,144.077,4
+1louJpMmzEicAn7lzDalPW,No Promises (feat. Demi Lovato),72,223504,0,"['Cheat Codes', 'Demi Lovato']","['7DMveApC7UnC2NPfPvlHSU', '6S2OmqARrzebs0tKUEyXyp']",2017-03-31,0.741,0.667,10,-5.445,1,0.134,0.0575,0.0,0.106,0.595,112.956,4
+6kPJZM97LwdG9QIsT7khp6,Solo (feat. Demi Lovato),76,222653,0,"['Clean Bandit', 'Demi Lovato']","['6MDME20pz9RveH9rEXvrOM', '6S2OmqARrzebs0tKUEyXyp']",2018-05-17,0.737,0.636,11,-4.546,0,0.0437,0.0441,6.66e-05,0.35,0.565,105.005,4
+0STK94RxUulYqWzwFlyAb5,Sober,73,197893,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2018-06-21,0.397,0.303,1,-10.413,1,0.11,0.798,4.16e-06,0.0824,0.17,170.22,3
+0mlAOSILGRys2IbvyOT5VJ,Échame La Culpa,74,173800,0,"['Luis Fonsi', 'Demi Lovato']","['4V8Sr092TqfHkfAA5fXXqG', '6S2OmqARrzebs0tKUEyXyp']",2019-02-01,0.733,0.897,0,-3.652,1,0.0389,0.0391,0.0,0.117,0.649,96.006,4
+0zzVTGyRrWpQu8Fr28NRAv,OK Not To Be OK,80,159863,0,"['Marshmello', 'Demi Lovato']","['64KEffDW9EtZ1y2vBYgq8T', '6S2OmqARrzebs0tKUEyXyp']",2020-09-10,0.743,0.837,1,-5.025,0,0.0649,0.0172,0.0,0.0743,0.263,103.072,4
+2h9TDNEXRhcDIV3fsoEVq9,What Other People Say,85,194890,1,"['Sam Fischer', 'Demi Lovato']","['6L1XC7NrmgWRlwAeLJvVtA', '6S2OmqARrzebs0tKUEyXyp']",2021-02-04,0.652,0.472,7,-8.084,1,0.0399,0.158,0.0,0.121,0.24,126.904,4
+2kONpeXXK70YEs7c0UQbmq,Dancing With The Devil,79,243992,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-03-26,0.413,0.64,8,-5.811,1,0.0427,0.273,0.0,0.11,0.149,75.245,4
+3qyJxWoPj7NUXHrSsXam3X,Met Him Last Night,66,204632,0,"['Demi Lovato', 'Ariana Grande']","['6S2OmqARrzebs0tKUEyXyp', '66CXWjxzNUsdJxJ2JdwvnR']",2021-04-01,0.529,0.543,4,-4.546,0,0.0263,0.216,0.0,0.0957,0.0742,144.959,4
+4B3RmT3cGvh8By3WY9pbIx,Skyscraper,69,221293,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2011-01-01,0.573,0.581,7,-3.325,1,0.0276,0.148,0.0,0.128,0.188,103.82,4
+3sP3c86WFjOzHHnbhhZcLA,Give Your Heart a Break,73,205347,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2011-01-01,0.651,0.695,6,-3.218,1,0.0487,0.23,0.0,0.144,0.569,123.008,4
+1MKZaAEx8RrzoQjHhVuvgs,Tell Me You Love Me,69,236987,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2017-09-29,0.538,0.6,6,-5.463,1,0.0489,0.0273,0.0,0.147,0.26,81.888,4
+1fipvP2zmef6vN2IwXfJhY,I’m Ready (with Demi Lovato),74,200838,0,"['Sam Smith', 'Demi Lovato']","['2wY79sveU1sp5g7SokKOiI', '6S2OmqARrzebs0tKUEyXyp']",2020-04-16,0.501,0.674,5,-6.363,1,0.0408,0.00346,3.56e-05,0.282,0.152,155.051,4
+0M9VqYG0wVun054JIdwFO8,La La Land,61,196467,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2008-01-01,0.467,0.919,6,-2.255,0,0.069,0.0149,0.0,0.0193,0.706,169.987,4
+4He7bzKBaiu7CRz4wGkZzx,Don't Forget,58,223160,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2008-01-01,0.641,0.451,4,-7.694,1,0.0899,0.507,1.71e-06,0.629,0.612,179.967,4
+33RJ3P6wc0B0FIyDalhNTv,Here We Go Again,57,226253,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2009-01-01,0.585,0.927,5,-5.253,1,0.04,0.00432,0.0,0.178,0.672,142.043,4
+1A2PVHd6kWaMlaJVkMfXmz,"Let It Go - From ""Frozen / Single Version",60,224387,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2013-01-01,0.505,0.624,7,-6.513,1,0.0371,0.0235,0.0,0.5,0.215,139.849,4
+3QihIU0zB0c5H4AlwS21OS,Somebody To You,60,183052,0,"['The Vamps', 'Demi Lovato']","['7gAppWoH7pcYmphCVTXkzs', '6S2OmqARrzebs0tKUEyXyp']",2014-12-01,0.562,0.874,3,-3.568,1,0.0439,0.0951,0.0,0.334,0.796,86.991,4
+06VsoIC668pU516T6qrgkJ,Instruction (feat. Demi Lovato & Stefflon Don),65,165907,0,"['Jax Jones', 'Demi Lovato', 'Stefflon Don']","['4Q6nIcaBED8qUel8bBx6Cr', '6S2OmqARrzebs0tKUEyXyp', '2ExGrw6XpbtUAJHTLtUXUD']",2019-07-12,0.763,0.923,9,-3.108,0,0.191,0.103,0.0,0.105,0.934,121.074,4
+57ijZDKnYdHw5ZpHLyHblW,The Art Of Starting Over,69,167221,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-02,0.638,0.683,4,-3.587,1,0.0627,0.000545,7.39e-05,0.64,0.719,119.93,4
+35iY0wPXAoLnI6ahHk0hUV,Easy (with Noah Cyrus),69,208903,0,"['Demi Lovato', 'Noah Cyrus']","['6S2OmqARrzebs0tKUEyXyp', '55fhWPvDiMpLnE4ZzNXZyW']",2021-04-02,0.265,0.474,8,-5.22,0,0.0371,0.0419,0.0,0.287,0.353,74.928,4
+3Ge1KFkRXKJgPz3keyQWaw,My Girlfriends Are My Boyfriend (feat. Saweetie),69,187761,1,"['Demi Lovato', 'Saweetie']","['6S2OmqARrzebs0tKUEyXyp', '6cK3NBO6uP7hh0oyuVELFl']",2021-04-02,0.884,0.523,11,-7.001,0,0.221,0.144,3.36e-06,0.0941,0.782,98.04,4
+38KHLuvLbQTIsRGiy66RrQ,The Way You Don't Look At Me,69,148420,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-02,0.612,0.551,1,-7.967,0,0.0367,0.259,0.0,0.0691,0.241,98.991,4
+6YiFO4Z74jjyJXWfqLH0Gy,Melon Cake,69,212318,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-02,0.558,0.555,2,-5.235,1,0.158,0.0023,4.89e-06,0.0395,0.888,220.065,4
+4wnswT59TvNDhJZ24zjEnI,ICU (Madison's Lullabye),68,196554,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-02,0.502,0.353,5,-7.338,1,0.0345,0.877,0.0,0.0707,0.371,115.941,4
+6qcMdeGLSkio2IhkEcU4J9,Lonely People,68,160547,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-02,0.656,0.548,1,-5.269,1,0.0304,0.00605,0.0,0.0954,0.764,90.996,4
+2vJUcguD2EeJ6QMMqsP962,The Kind Of Lover I Am,67,189162,1,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-02,0.65,0.916,6,-5.453,0,0.0758,0.00491,0.000839,0.0767,0.779,129.95,4
+4Zm2hTV7EqbqsFrraKBkyh,Carefully,67,191721,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-02,0.694,0.605,11,-5.621,1,0.0289,0.0756,7.54e-06,0.131,0.481,121.906,4
+3XabMu0mJaQmrqz57UkEZI,Anyone,67,227786,1,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-02,0.578,0.386,11,-6.338,1,0.0385,0.875,0.0,0.108,0.321,86.075,5
+6dHteqtKIpNSbxB5ohtBST,15 Minutes,66,171873,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-02,0.444,0.786,1,-5.089,1,0.331,0.0287,2.3e-05,0.109,0.348,183.986,4
+0Z7508iU5JfWqO3sR4Vbzm,California Sober,66,185698,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-02,0.34,0.783,9,-4.548,1,0.069,0.00859,0.0,0.0546,0.389,82.343,4
+2YUgWYgud2pHICZ5KwmoKY,Mad World,65,182486,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-02,0.326,0.319,9,-9.896,1,0.0367,0.539,0.0,0.312,0.127,174.187,4
+1sm3HnqGx5sxYc6P2pLwEl,Good Place,65,184760,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-02,0.417,0.43,7,-5.992,1,0.0625,0.417,0.0,0.0954,0.32,82.43,4
+6zBQ1w06kbswixA2LvnFIv,Butterfly,65,157252,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-02,0.653,0.423,6,-5.229,1,0.0362,0.463,0.0,0.116,0.469,139.853,4
+1qYnqHydtG4iV9YenAz8Ux,Sunset,64,244481,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-05,0.629,0.566,5,-6.061,1,0.035,0.0421,0.0,0.337,0.476,77.653,3
+4Ua0nnuFz8rmHLZt8f0TCk,Anyone - Live Acoustic,54,221827,1,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-05,0.417,0.429,11,-4.733,1,0.0338,0.798,0.0,0.115,0.227,135.878,4
+4tB9pfcdjPcTZwFIXDUzcm,Dancing With The Devil - Live Acoustic,53,250201,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-05,0.415,0.529,0,-3.729,0,0.0304,0.514,0.0,0.194,0.122,70.18,4
+6VM9OZ0oGu0kUInRZWNPiB,ICU (Madison's Lullabye) - Live Acoustic,51,208571,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-05,0.447,0.312,5,-6.056,1,0.0394,0.786,0.0,0.313,0.314,119.552,4
+21MChSGdLldUOOaOCdWmzD,I Love Me,50,203672,1,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2021-04-01,0.667,0.562,11,-7.026,1,0.0497,0.00265,0.0,0.0842,0.712,150.09,4
+5Alb26b1yQSaZtNxYKhZFC,Wouldn't Change a Thing,53,205040,0,"['Demi Lovato', 'Joe Jonas']","['6S2OmqARrzebs0tKUEyXyp', '7gbmX8SsfjEjxDMzBi1ZOL']",2010-01-01,0.353,0.879,1,-3.486,1,0.0833,0.0843,0.0,0.105,0.516,171.762,4
+56jz6JfJcpY6NM3NdGafje,"This Is Me - From ""Camp Rock""",50,187733,0,"['Demi Lovato', 'Joe Jonas']","['6S2OmqARrzebs0tKUEyXyp', '7gbmX8SsfjEjxDMzBi1ZOL']",2009-01-01,0.465,0.833,1,-2.809,1,0.0385,0.00874,0.0,0.121,0.529,90.951,4
+50DMJJpAeQv4fIpxZvQz2e,Monsters (feat. Demi Lovato and blackbear),75,174425,1,"['All Time Low', 'Demi Lovato', 'blackbear']","['46gyXjRIvN1NL1eCB8GBxo', '6S2OmqARrzebs0tKUEyXyp', '2cFrymmkijnjDg9SS92EPM']",2020-12-04,0.51,0.787,0,-3.712,0,0.0529,0.0137,0.0,0.368,0.793,162.092,4
+5L441bJlqd4wSogIp1WFj0,We'll Be A Dream (feat. Demi Lovato),51,233067,0,"['We The Kings', 'Demi Lovato']","['3ao3jf5d70Tf4fPh2bnXVl', '6S2OmqARrzebs0tKUEyXyp']",2009-01-01,0.434,0.702,9,-4.681,1,0.0305,0.00346,0.0,0.232,0.15,159.94,4
+6SjCa7LhEpPNiCxe3bLln4,Made In The USA,59,196093,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2013-01-01,0.576,0.86,8,-3.913,1,0.0394,0.000875,0.0,0.316,0.594,87.461,4
+0fMhhdMdbC94rHHK63jwWu,Fix a Heart,57,193040,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2011-01-01,0.491,0.452,0,-7.86,1,0.0491,0.579,0.0,0.0907,0.455,160.227,3
+2tsI8snJhb4BL9zczvlZmL,What Other People Say (with Sam Fischer),68,194890,1,"['Sam Fischer', 'Demi Lovato']","['6L1XC7NrmgWRlwAeLJvVtA', '6S2OmqARrzebs0tKUEyXyp']",2021-04-02,0.652,0.472,7,-8.084,1,0.0396,0.155,0.0,0.12,0.242,126.913,4
+7eM88DF4yL4hpNnB6oJLnD,Catch Me,54,190000,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2009-01-01,0.289,0.292,4,-11.991,1,0.048,0.491,0.0,0.255,0.491,185.425,4
+2eLxEzMVfiQih0cJIWIowm,Nightingale,58,216400,0,['Demi Lovato'],['6S2OmqARrzebs0tKUEyXyp'],2013-01-01,0.486,0.605,9,-5.574,1,0.0365,0.139,0.0,0.105,0.33,141.319,4

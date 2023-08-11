@@ -24,22 +24,23 @@ struct SpecialQuizSelectionView: View {
                     .font(.callout)
                 Spacer()
                 ScrollView {
-                    LazyVGrid(columns: [GridItem(.fixed(120)), GridItem(.fixed(120)), GridItem(.fixed(120))],
+                    LazyVGrid(columns: [GridItem(.fixed(150)), GridItem(.fixed(150))],
                               spacing: 1,
                               content: {
                         ForEach(ArtistSpecials.artists, id:\.self) { artist in
                             VStack {
                                 NavigationLink {
-                                    SpecialQuizView(gradientColors: colorGradient, quizName: artist)
+                                    SpecialQuizView(gradientColors: colorGradient, quizName: artist, trackIds: parseTracksFromCSV(file: artist.lowercased()))
                                 } label: {
                                     Image(artist)
                                         .resizable()
-                                        .frame(width: 75, height: 75)
-                                        .clipShape(Capsule())
+                                        .frame(width: 60, height: 60)
+                                        .clipShape(Rectangle())
+                                        .cornerRadius(10)
                                         .shadow(radius: 4)
                                 }
                                 Text(artist)
-                                    .font(.callout)
+                                    .font(.title3)
                                 HStack {
                                     Image(systemName: "crown.fill")
                                     Text(String(highScoreManager.getHighScore(for: artist)))

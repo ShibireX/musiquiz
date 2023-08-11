@@ -17,7 +17,7 @@ struct QuizSelector {
                           Quiz(quizName: .kPop, quizType: .normal, quizColors: ColorModel.quizColors["kPop"]!),
                           Quiz(quizName: .jRock, quizType: .normal, quizColors: ColorModel.quizColors["jRock"]!)]
     
-    static var specialQuizzes = [Quiz(quizName: .artistSpecials, quizType: .special, quizColors: ColorModel.quizColors["pop"]!)]
+    static var specialQuizzes = [Quiz(quizName: .artistSpecials, quizType: .special, quizColors: ColorModel.quizColors["artistSpecials"]!)]
 }
 
 struct Quiz: Hashable {

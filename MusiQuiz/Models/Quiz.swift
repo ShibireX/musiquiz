@@ -9,29 +9,44 @@ import Foundation
 import SpotifyWebAPI
 import SwiftUI
 
-struct Quiz {
-    var questions: [ArtistQuestion]
+struct QuizSelector {
+    static var quizzes = [Quiz(quizName: .mainstream, quizType: .normal, quizColors: ColorModel.quizColors["mainstream"]!),
+                          Quiz(quizName: .hipHop, quizType: .normal, quizColors: ColorModel.quizColors["hipHop"]!),
+                          Quiz(quizName: .pop, quizType: .normal, quizColors: ColorModel.quizColors["pop"]!),
+                          Quiz(quizName: .edm, quizType: .normal, quizColors: ColorModel.quizColors["edm"]!),
+                          Quiz(quizName: .kPop, quizType: .normal, quizColors: ColorModel.quizColors["kPop"]!),
+                          Quiz(quizName: .jRock, quizType: .normal, quizColors: ColorModel.quizColors["jRock"]!)]
     
-    func checkAnswer(answer: String, correct: String) -> Bool {
-        if answer != correct {
-            return false
-        } else {
-            return true
-        }
-    }
+    static var specialQuizzes = [Quiz(quizName: .artistSpecials, quizType: .special, quizColors: ColorModel.quizColors["pop"]!)]
+}
 
+struct Quiz: Hashable {
+    var quizName: QuizName
+    var quizType: QuizType
+    var quizColors: [Color]
+}
+
+enum QuizName: String {
+    case mainstream = "Mainstream"
+    case hipHop = "Hip Hop"
+    case pop = "Pop"
+    case edm = "EDM"
+    case kPop = "K-Pop"
+    case jRock = "J-Rock"
+    case artistSpecials = "Artist Specials"
+}
+
+enum QuizType {
+    case normal
+    case special
+}
+
+struct ArtistQuiz {
+    var questions: [ArtistQuestion]
 }
 
 struct TrackQuiz {
     var questions: [TrackQuestion]
-    
-    func checkAnswer(answer: String, correct: String) -> Bool {
-        if answer != correct {
-            return false
-        } else {
-            return true
-        }
-    }
 }
 
 struct ArtistQuestion: Hashable {
@@ -50,5 +65,6 @@ enum QuestionType: String {
     case imageQuestion = "Who is the artist?"
     case trackQuestion = "What song is this?"
 }
+
 
 

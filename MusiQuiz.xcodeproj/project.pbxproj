@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DAB28C162A7DC56400431820 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB28C152A7DC56400431820 /* HomeView.swift */; };
-		DAB28C192A7DE1D100431820 /* top_100.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAB28C172A7DE1D100431820 /* top_100.csv */; };
-		DAB28C1A2A7DE1D100431820 /* k_pop.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAB28C182A7DE1D100431820 /* k_pop.csv */; };
-		DAB28C1C2A7DE48300431820 /* swedish.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAB28C1B2A7DE48300431820 /* swedish.csv */; };
 		DAB82A0F2A7C1C30003CF437 /* MusiQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB82A0E2A7C1C30003CF437 /* MusiQuizApp.swift */; };
 		DAB82A112A7C1C30003CF437 /* ArtistQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB82A102A7C1C30003CF437 /* ArtistQuizView.swift */; };
 		DAB82A132A7C1C36003CF437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB82A122A7C1C36003CF437 /* Assets.xcassets */; };
@@ -22,23 +19,23 @@
 		DAB82A2D2A7C2113003CF437 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = DAB82A2C2A7C2113003CF437 /* KeychainAccess */; };
 		DAB82A3A2A7C3C5C003CF437 /* ParseCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB82A392A7C3C5C003CF437 /* ParseCSV.swift */; };
 		DAB82A3D2A7C3C77003CF437 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = DAB82A3C2A7C3C77003CF437 /* SwiftCSV */; };
-		DAB82A3F2A7C50BD003CF437 /* most_popular.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAB82A3E2A7C50BD003CF437 /* most_popular.csv */; };
 		DAF67B072A804A2800612839 /* HighScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B062A804A2800612839 /* HighScoreManager.swift */; };
 		DAF67B092A84233100612839 /* TrackQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B082A84233100612839 /* TrackQuizView.swift */; };
-		DAF67B0F2A845B8200612839 /* swedish_hip_hop.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B0C2A845B8200612839 /* swedish_hip_hop.csv */; };
-		DAF67B102A845B8200612839 /* anime.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B0D2A845B8200612839 /* anime.csv */; };
-		DAF67B112A845B8200612839 /* latino_trap.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B0E2A845B8200612839 /* latino_trap.csv */; };
-		DAFBA85F2A7D8D7C0084B79C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBA85E2A7D8D7C0084B79C /* MainView.swift */; };
-		DAFBA8612A7D8F5D0084B79C /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBA8602A7D8F5D0084B79C /* LandingView.swift */; };
-		DAFBA8632A7D8F800084B79C /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBA8622A7D8F800084B79C /* AuthorizationView.swift */; };
+		DAF67B162A856CE100612839 /* NormalQuizSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B152A856CE100612839 /* NormalQuizSelectionView.swift */; };
+		DAF67B182A857A8000612839 /* mainstream.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B172A857A8000612839 /* mainstream.csv */; };
+		DAF67B1C2A85867500612839 /* k-pop.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B1B2A85867500612839 /* k-pop.csv */; };
+		DAF67B212A858A7300612839 /* j-rock.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B1D2A858A7300612839 /* j-rock.csv */; };
+		DAF67B222A858A7300612839 /* hip hop.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B1E2A858A7300612839 /* hip hop.csv */; };
+		DAF67B232A858A7300612839 /* pop.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B1F2A858A7300612839 /* pop.csv */; };
+		DAF67B242A858A7300612839 /* edm.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAF67B202A858A7300612839 /* edm.csv */; };
+		DAF67B262A85B11800612839 /* SpecialQuizSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B252A85B11800612839 /* SpecialQuizSelectionView.swift */; };
+		DAF67B282A85B20B00612839 /* ArtistSpecials.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B272A85B20B00612839 /* ArtistSpecials.swift */; };
+		DAF67B2A2A85BAF700612839 /* SpecialQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B292A85BAF700612839 /* SpecialQuizView.swift */; };
 		DAFBA8652A7D8FA70084B79C /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBA8642A7D8FA70084B79C /* ColorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DAB28C152A7DC56400431820 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		DAB28C172A7DE1D100431820 /* top_100.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = top_100.csv; path = MusiQuiz/top_100.csv; sourceTree = SOURCE_ROOT; };
-		DAB28C182A7DE1D100431820 /* k_pop.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = k_pop.csv; path = MusiQuiz/k_pop.csv; sourceTree = SOURCE_ROOT; };
-		DAB28C1B2A7DE48300431820 /* swedish.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = swedish.csv; path = MusiQuiz/swedish.csv; sourceTree = SOURCE_ROOT; };
 		DAB82A0B2A7C1C30003CF437 /* MusiQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusiQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB82A0E2A7C1C30003CF437 /* MusiQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiQuizApp.swift; sourceTree = "<group>"; };
 		DAB82A102A7C1C30003CF437 /* ArtistQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistQuizView.swift; sourceTree = "<group>"; };
@@ -49,15 +46,18 @@
 		DAB82A242A7C1E15003CF437 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		DAB82A362A7C2335003CF437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DAB82A392A7C3C5C003CF437 /* ParseCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseCSV.swift; sourceTree = "<group>"; };
-		DAB82A3E2A7C50BD003CF437 /* most_popular.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = most_popular.csv; sourceTree = "<group>"; };
 		DAF67B062A804A2800612839 /* HighScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreManager.swift; sourceTree = "<group>"; };
 		DAF67B082A84233100612839 /* TrackQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackQuizView.swift; sourceTree = "<group>"; };
-		DAF67B0C2A845B8200612839 /* swedish_hip_hop.csv */ = {isa = PBXFileReference; lastKnownFileType = file; name = swedish_hip_hop.csv; path = MusiQuiz/swedish_hip_hop.csv; sourceTree = SOURCE_ROOT; };
-		DAF67B0D2A845B8200612839 /* anime.csv */ = {isa = PBXFileReference; lastKnownFileType = file; name = anime.csv; path = MusiQuiz/anime.csv; sourceTree = SOURCE_ROOT; };
-		DAF67B0E2A845B8200612839 /* latino_trap.csv */ = {isa = PBXFileReference; lastKnownFileType = file; name = latino_trap.csv; path = MusiQuiz/latino_trap.csv; sourceTree = SOURCE_ROOT; };
-		DAFBA85E2A7D8D7C0084B79C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		DAFBA8602A7D8F5D0084B79C /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
-		DAFBA8622A7D8F800084B79C /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		DAF67B152A856CE100612839 /* NormalQuizSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalQuizSelectionView.swift; sourceTree = "<group>"; };
+		DAF67B172A857A8000612839 /* mainstream.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mainstream.csv; sourceTree = "<group>"; };
+		DAF67B1B2A85867500612839 /* k-pop.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "k-pop.csv"; sourceTree = "<group>"; };
+		DAF67B1D2A858A7300612839 /* j-rock.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "j-rock.csv"; sourceTree = "<group>"; };
+		DAF67B1E2A858A7300612839 /* hip hop.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hip hop.csv"; sourceTree = "<group>"; };
+		DAF67B1F2A858A7300612839 /* pop.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pop.csv; sourceTree = "<group>"; };
+		DAF67B202A858A7300612839 /* edm.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = edm.csv; sourceTree = "<group>"; };
+		DAF67B252A85B11800612839 /* SpecialQuizSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialQuizSelectionView.swift; sourceTree = "<group>"; };
+		DAF67B272A85B20B00612839 /* ArtistSpecials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistSpecials.swift; sourceTree = "<group>"; };
+		DAF67B292A85BAF700612839 /* SpecialQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialQuizView.swift; sourceTree = "<group>"; };
 		DAFBA8642A7D8FA70084B79C /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,13 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB82A362A7C2335003CF437 /* Info.plist */,
-				DAB82A3E2A7C50BD003CF437 /* most_popular.csv */,
-				DAB28C182A7DE1D100431820 /* k_pop.csv */,
-				DAB28C172A7DE1D100431820 /* top_100.csv */,
-				DAB28C1B2A7DE48300431820 /* swedish.csv */,
-				DAF67B0D2A845B8200612839 /* anime.csv */,
-				DAF67B0E2A845B8200612839 /* latino_trap.csv */,
-				DAF67B0C2A845B8200612839 /* swedish_hip_hop.csv */,
+				DAF67B122A85663800612839 /* CSV */,
 				DAB82A1D2A7C1C47003CF437 /* Views */,
 				DAB82A1C2A7C1C41003CF437 /* Models */,
 				DAB82A0E2A7C1C30003CF437 /* MusiQuizApp.swift */,
@@ -128,6 +122,7 @@
 				DAB82A392A7C3C5C003CF437 /* ParseCSV.swift */,
 				DAFBA8642A7D8FA70084B79C /* ColorModel.swift */,
 				DAF67B062A804A2800612839 /* HighScoreManager.swift */,
+				DAF67B272A85B20B00612839 /* ArtistSpecials.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -136,13 +131,26 @@
 			isa = PBXGroup;
 			children = (
 				DAB82A102A7C1C30003CF437 /* ArtistQuizView.swift */,
-				DAFBA85E2A7D8D7C0084B79C /* MainView.swift */,
-				DAFBA8602A7D8F5D0084B79C /* LandingView.swift */,
-				DAFBA8622A7D8F800084B79C /* AuthorizationView.swift */,
 				DAB28C152A7DC56400431820 /* HomeView.swift */,
 				DAF67B082A84233100612839 /* TrackQuizView.swift */,
+				DAF67B152A856CE100612839 /* NormalQuizSelectionView.swift */,
+				DAF67B252A85B11800612839 /* SpecialQuizSelectionView.swift */,
+				DAF67B292A85BAF700612839 /* SpecialQuizView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DAF67B122A85663800612839 /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				DAF67B202A858A7300612839 /* edm.csv */,
+				DAF67B1E2A858A7300612839 /* hip hop.csv */,
+				DAF67B1D2A858A7300612839 /* j-rock.csv */,
+				DAF67B1F2A858A7300612839 /* pop.csv */,
+				DAF67B1B2A85867500612839 /* k-pop.csv */,
+				DAF67B172A857A8000612839 /* mainstream.csv */,
+			);
+			path = CSV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,15 +221,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB28C1A2A7DE1D100431820 /* k_pop.csv in Resources */,
-				DAB28C192A7DE1D100431820 /* top_100.csv in Resources */,
 				DAB82A162A7C1C36003CF437 /* Preview Assets.xcassets in Resources */,
-				DAF67B112A845B8200612839 /* latino_trap.csv in Resources */,
+				DAF67B222A858A7300612839 /* hip hop.csv in Resources */,
+				DAF67B1C2A85867500612839 /* k-pop.csv in Resources */,
+				DAF67B212A858A7300612839 /* j-rock.csv in Resources */,
 				DAB82A132A7C1C36003CF437 /* Assets.xcassets in Resources */,
-				DAF67B0F2A845B8200612839 /* swedish_hip_hop.csv in Resources */,
-				DAF67B102A845B8200612839 /* anime.csv in Resources */,
-				DAB28C1C2A7DE48300431820 /* swedish.csv in Resources */,
-				DAB82A3F2A7C50BD003CF437 /* most_popular.csv in Resources */,
+				DAF67B232A858A7300612839 /* pop.csv in Resources */,
+				DAF67B182A857A8000612839 /* mainstream.csv in Resources */,
+				DAF67B242A858A7300612839 /* edm.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,16 +242,17 @@
 				DAB82A1F2A7C1C5D003CF437 /* Spotify.swift in Sources */,
 				DAB82A112A7C1C30003CF437 /* ArtistQuizView.swift in Sources */,
 				DAB82A3A2A7C3C5C003CF437 /* ParseCSV.swift in Sources */,
-				DAFBA85F2A7D8D7C0084B79C /* MainView.swift in Sources */,
 				DAB82A232A7C1C72003CF437 /* Quiz.swift in Sources */,
+				DAF67B282A85B20B00612839 /* ArtistSpecials.swift in Sources */,
+				DAF67B262A85B11800612839 /* SpecialQuizSelectionView.swift in Sources */,
 				DAB28C162A7DC56400431820 /* HomeView.swift in Sources */,
+				DAF67B2A2A85BAF700612839 /* SpecialQuizView.swift in Sources */,
 				DAF67B092A84233100612839 /* TrackQuizView.swift in Sources */,
 				DAB82A0F2A7C1C30003CF437 /* MusiQuizApp.swift in Sources */,
-				DAFBA8612A7D8F5D0084B79C /* LandingView.swift in Sources */,
 				DAF67B072A804A2800612839 /* HighScoreManager.swift in Sources */,
 				DAB82A252A7C1E15003CF437 /* Environment.swift in Sources */,
 				DAFBA8652A7D8FA70084B79C /* ColorModel.swift in Sources */,
-				DAFBA8632A7D8F800084B79C /* AuthorizationView.swift in Sources */,
+				DAF67B162A856CE100612839 /* NormalQuizSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

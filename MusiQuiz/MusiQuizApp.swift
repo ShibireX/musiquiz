@@ -14,7 +14,7 @@ struct MusiQuizApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainView()
+            HomeView()
                 .environmentObject(spotify)
                 .environmentObject(highScoreManager)
         }

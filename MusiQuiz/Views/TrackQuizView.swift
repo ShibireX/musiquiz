@@ -13,7 +13,6 @@ import AVFoundation
 
 struct TrackQuizView: View {
     @EnvironmentObject var spotify: Spotify
-    @State private var testArtists: [Artist] = []
     @State private var quiz = TrackQuiz(questions: [])
     @State private var result = " "
     @State private var questionNumber = 1
@@ -148,8 +147,8 @@ struct TrackQuizView: View {
                                             self.buildQuestion()
                                         } else {
                                             self.quizFinished = true
-                                            if totalPoints > highScoreManager.getHighScore(for: quizName) {
-                                                highScoreManager.setHighScore(for: quizName, score: totalPoints)
+                                            if totalPoints > highScoreManager.getHighScore(for: quizName + "Tracks") {
+                                                highScoreManager.setHighScore(for: quizName + "Tracks", score: totalPoints)
                                             }
                                         }
                                     }

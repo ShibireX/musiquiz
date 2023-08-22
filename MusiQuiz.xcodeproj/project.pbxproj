@@ -19,6 +19,7 @@
 		DAB82A2D2A7C2113003CF437 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = DAB82A2C2A7C2113003CF437 /* KeychainAccess */; };
 		DAB82A3A2A7C3C5C003CF437 /* ParseCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB82A392A7C3C5C003CF437 /* ParseCSV.swift */; };
 		DAB82A3D2A7C3C77003CF437 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = DAB82A3C2A7C3C77003CF437 /* SwiftCSV */; };
+		DADE05AC2A9521810036A414 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE05AB2A9521810036A414 /* ProgressBarView.swift */; };
 		DAF67B072A804A2800612839 /* HighScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B062A804A2800612839 /* HighScoreManager.swift */; };
 		DAF67B092A84233100612839 /* TrackQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B082A84233100612839 /* TrackQuizView.swift */; };
 		DAF67B162A856CE100612839 /* NormalQuizSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF67B152A856CE100612839 /* NormalQuizSelectionView.swift */; };
@@ -55,6 +56,7 @@
 		DAB82A242A7C1E15003CF437 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		DAB82A362A7C2335003CF437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DAB82A392A7C3C5C003CF437 /* ParseCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseCSV.swift; sourceTree = "<group>"; };
+		DADE05AB2A9521810036A414 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		DAF67B062A804A2800612839 /* HighScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreManager.swift; sourceTree = "<group>"; };
 		DAF67B082A84233100612839 /* TrackQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackQuizView.swift; sourceTree = "<group>"; };
 		DAF67B152A856CE100612839 /* NormalQuizSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalQuizSelectionView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		DAB82A1D2A7C1C47003CF437 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DADE05AA2A95216A0036A414 /* HelperViews */,
 				DAF67B332A868D4A00612839 /* CodeAuthViews */,
 				DAB82A102A7C1C30003CF437 /* ArtistQuizView.swift */,
 				DAB28C152A7DC56400431820 /* HomeView.swift */,
@@ -157,6 +160,14 @@
 				DAF67B292A85BAF700612839 /* SpecialQuizView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DADE05AA2A95216A0036A414 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				DADE05AB2A9521810036A414 /* ProgressBarView.swift */,
+			);
+			path = HelperViews;
 			sourceTree = "<group>";
 		};
 		DAF67B122A85663800612839 /* CSV */ = {
@@ -281,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB82A1F2A7C1C5D003CF437 /* Spotify.swift in Sources */,
+				DADE05AC2A9521810036A414 /* ProgressBarView.swift in Sources */,
 				DAB82A112A7C1C30003CF437 /* ArtistQuizView.swift in Sources */,
 				DAB82A3A2A7C3C5C003CF437 /* ParseCSV.swift in Sources */,
 				DAB82A232A7C1C72003CF437 /* Quiz.swift in Sources */,

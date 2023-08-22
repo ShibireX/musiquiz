@@ -41,12 +41,10 @@ struct SpecialQuizSelectionView: View {
                                 }
                                 Text(artist)
                                     .font(.title3)
-                                HStack {
-                                    Image(systemName: "crown.fill")
-                                    Text(String(highScoreManager.getHighScore(for: artist)))
-                                        .padding(.leading, -5)
-                                }
-                                .padding(.top, -5)
+                                Image(systemName: "crown.fill")
+                                    .padding(.top, -7)
+                                Text(String(highScoreManager.getHighScore(for: artist)))
+                                    .padding(.top, 1)
                             }
                             .padding(.top, 30)
                         }

@@ -35,12 +35,10 @@ struct NormalQuizSelectionView: View {
                             .clipShape(Circle())
                         Text("Artists")
                             .bold()
-                        HStack {
-                            Image(systemName: "crown.fill")
-                            Text(String(artistsHighScore))
-                                .padding(.leading, -5)
-                        }
-                        .padding(.top, -5)
+                        Image(systemName: "crown.fill")
+                            .padding(.top, -7)
+                        Text(String(artistsHighScore))
+                            .padding(.top, 1)
                     }
                 }
                 Spacer()
@@ -54,12 +52,10 @@ struct NormalQuizSelectionView: View {
                             .clipShape(Circle())
                         Text("Songs")
                             .bold()
-                        HStack {
-                            Image(systemName: "crown.fill")
-                            Text(String(tracksHighScore))
-                                .padding(.leading, -5)
-                        }
-                        .padding(.top, -5)
+                        Image(systemName: "crown.fill")
+                            .padding(.top, -7)
+                        Text(String(tracksHighScore))
+                            .padding(.top, 1)
                     }
                 }
                 Spacer()

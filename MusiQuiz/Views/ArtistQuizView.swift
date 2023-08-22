@@ -43,6 +43,9 @@ struct ArtistQuizView: View {
     @State private var timeDifference: TimeInterval = 0
     @State private var totalPoints: Int = 0
     @EnvironmentObject var highScoreManager: HighScoreManager
+    
+    //Progress
+    @State private var progressWidth: CGFloat = 0
    
     
     var body: some View {
@@ -137,6 +140,7 @@ struct ArtistQuizView: View {
                                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
                                         withAnimation(.easeOut(duration: 0.25)) {
                                             self.contentOpacity = 0.0
+                                            self.progressWidth += 19.5
                                         }
                                     }
                                     
@@ -183,6 +187,13 @@ struct ArtistQuizView: View {
                         }
                     }
                 }
+            }
+            VStack {
+                HStack {
+                    ProgressBarView(barWidth: progressWidth)
+                    Spacer()
+                }
+                .padding(.bottom, -35)
             }
         }
         .toolbar(.hidden)

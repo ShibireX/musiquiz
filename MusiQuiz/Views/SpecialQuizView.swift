@@ -18,6 +18,7 @@ struct SpecialQuizView: View {
     @State private var questionNumber = 1
     @State private var correctAnswers = 0
     @State private var quizFinished: Bool = false
+    @State private var buttonIsEnabled: Bool = true
     private let totalQuestions = 20
 
     @State private var doneStoringQuestion = false
@@ -126,6 +127,7 @@ struct SpecialQuizView: View {
                         VStack {
                             ForEach(question.trackAlternatives, id: \.self) { alternative in
                                 Button() {
+                                    buttonIsEnabled = false
                                     self.audioPlayer.pause()
                                     self.audioPlayer = nil
                                     if alternative.name == question.correctTrack.name {
@@ -172,6 +174,7 @@ struct SpecialQuizView: View {
                                                 .shadow(radius: 2, x: 2, y:2)
                                         )
                                 }
+                                .disabled(!buttonIsEnabled)
                                 .padding(5)
                             }
                         }
@@ -186,6 +189,7 @@ struct SpecialQuizView: View {
                         self.audioPlayer = AVPlayer(url: previewURL)
                         self.audioPlayer.play()
                     }
+                    self.buttonIsEnabled = true
                     self.startTime = Date()
                     self.contentOpacity = 0.0
                     if doneStoringQuestion {

@@ -17,6 +17,7 @@ struct ArtistQuizView: View {
     @State private var questionNumber = 1
     @State private var correctAnswers = 0
     @State private var quizFinished: Bool = false
+    @State private var buttonIsEnabled: Bool = true
     private let totalQuestions = 20
 
     @State private var doneStoringQuestion = false
@@ -128,6 +129,7 @@ struct ArtistQuizView: View {
                         VStack {
                             ForEach(question.artistAlternatives, id: \.self) { alternative in
                                 Button() {
+                                    buttonIsEnabled = false
                                     if alternative.name == question.correctArtist.name {
                                         result = "✅"
                                         self.correctAnswers += 1
@@ -169,6 +171,7 @@ struct ArtistQuizView: View {
                                                 .shadow(radius: 2, x: 2, y:2)
                                         )
                                 }
+                                .disabled(!buttonIsEnabled)
                                 .padding(5)
                             }
                         }
@@ -181,6 +184,7 @@ struct ArtistQuizView: View {
                 .onAppear {
                     self.startTime = Date()
                     self.contentOpacity = 0.0
+                    self.buttonIsEnabled = true
                     if doneStoringQuestion {
                         withAnimation(.easeIn(duration: 1.5)) {
                             self.contentOpacity = 1.0
